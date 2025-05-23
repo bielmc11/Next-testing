@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom"
 import { render, screen } from "@testing-library/react"
-import Page from "../page"
+import Page from "../app/page"
 
 describe('Page', () => {
     it('renders heading', () => {
@@ -12,14 +12,4 @@ describe('Page', () => {
     })
 })
 
-describe('Probando Jest', () =>{
-    it('Excepciones de errores', () => {
-        function foo() {
-            throw new Error('foo')
-        }
-
-        expect(foo).toThrow(Error)
-        expect(() => foo()).toThrow(Error)
-    })
-})
 
